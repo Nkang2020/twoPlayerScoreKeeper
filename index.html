@@ -5,49 +5,27 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <link href="styles.css" rel="stylesheet" type="text/css">
-<script>
-$(document).ready(function(){
-  var num2 = 0;
-  var num1 = 0;
-  $("#p2plus5").click(function(){
-    num2 +=5;
-    $("#score2").html(num2);
-  });
-   $("#p2minus5").click(function(){
-    num2 -=5;
-    $("#score2").html(num2);
-  });
-  
-  $("#p1plus5").click(function(){
-    num1 +=5;
-    $("#score1").html(num1);
-  });
-   $("#p1minus5").click(function(){
-    num1 -=5;
-    $("#score1").html(num1);
-  });
-});
-</script>
+<script type="text/javascript" src='script.js'></script>
 </head>
-<body>
-<div class = "container text-center">
-  <h1>2 Player Score Keeper App!</h1>
-  <div id="boxdiv">
-  <div id= "box2">
-    <p> Player 2 Score: </p>
-    <p id="score2"> 0 </p>
+  <body>
+  <div class = "container text-center">
+    <h1>2 Player Score Keeper App!</h1>
+    <div id="boxdiv">
+    <div id= "box2">
+      <p> Player 2 Score: </p>
+      <p id="score2"> 0 </p>
+    </div>
+    <div id= "box1">
+      <p> Player 1 Score: </p>
+      <p id="score1"> 0 </p>
+    </div>
+    </div>
+    <br/>
+    <a class = "btn btn-primary" id="p1plus5"> P1 + 5 </a>
+    <a class = "btn btn-primary" id="p2plus5"> P2 + 5 </a>
+    <hr/>
+    <a class = "btn btn-primary" id="p1minus5"> P1 - 5 </a>  
+    <a class = "btn btn-primary" id="p2minus5"> P2 - 5 </a>  
   </div>
-  <div id= "box1">
-    <p> Player 1 Score: </p>
-    <p id="score1"> 0 </p>
-  </div>
-  </div>
-  <br/>
-  <a class = "btn btn-primary" id="p1plus5"> P1 + 5 </a>
-  <a class = "btn btn-primary" id="p2plus5"> P2 + 5 </a>
-  <hr/>
-  <a class = "btn btn-primary" id="p1minus5"> P1 - 5 </a>  
-  <a class = "btn btn-primary" id="p2minus5"> P2 - 5 </a>  
-</div>
-</body>
+  </body>
 </html>
